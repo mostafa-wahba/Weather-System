@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Weather System</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#"><img src="img/logo2x.png" class="logo"
+                    alt="Weather Logo">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="site-title">Weather</h1>
+                        <small class="ST-description">tagline goes here</small>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-bars"><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex align-items-center justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Photos</a>
+                    </li>
+                    <li class="nav-item border-0">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="input-sec">
+        <div class="container">
+            <div class="form">
+                <input type="text" class="LF-input" placeholder="Find your location..." id="search">
+                <input type="button" class="LS-input" value="Find" id="submit">
+            </div>
+        </div>
+    </section>
+    <section class="content-sec">
+        <div class="container">
+            <div class="content-table row g-0 justify-content-center">
+                <div class="today-cell cell col-4">
+                    <div class="cell-header d-flex justify-content-between align-items-center p-2">
+                        <p id="day"></p>
+                        <p id="date"></p>
+                    </div>
+                    <div class="cell-body p-3">
+                        <p id="location"></p>
+                        <div class="degree d-flex justify-content-between align-items-center pe-4">
+                            <p id="deg" class="num fw-bold text-white"></p>
+                            <div id="deg-icon" class="degree-icon"></div>
+                        </div>
+                        <div id="condition" class="custom"></div>
+                        <span class="me-3"><img src="img/icon-umberella.png" alt=""> 20%</span>
+                        <span class="me-3"><img src="img/icon-wind.png" alt=""> 18km/h</span>
+                        <span class="me-3"><img src="img/icon-compass.png" alt=""> East</span>
+                    </div>
+                </div>
+                <div class="tomorrow-cell cell col-4">
+                    <div class="cell-header d-flex justify-content-center align-items-center p-2">
+                        <p id="tomorowDate"></p>
+                    </div>
+                    <div class="cell-body text-center d-flex flex-column justify-content-center p-3">
+                        <div id="tomorowIcon" class="degree-icon mt-3"></div>
+                        <div class="degree mt-4">
+                            <p id="tomorowMax" class="num text-white mb-1"></p>
+                        </div>
+                        <small id="tomorowMin" class="num"></small>
+                        <div id="tomorowCondition" class="custom"></div>
+                    </div>
+                </div>
+                <div class="cell col-4">
+                    <div class="cell-header d-flex justify-content-center align-items-center p-2">
+                        <p id="afterTomorowDate"></p>
+                    </div>
+                    <div class="cell-body text-center d-flex flex-column justify-content-center p-3">
+                        <div id="afterIcon" class="degree-icon mt-3"></div>
+                        <div class="degree mt-4">
+                            <p id="afterMax" class="num text-white mb-1"></p>
+                        </div>
+                        <small id="afterMin" class="num"></small>
+                        <div id="afterCondition" class="custom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="subscribe-form">
+                        <input type="text" class="SF-input" placeholder="Enter your email to subscribe...">
+                        <input type="submit" class="SS-input" value="Subscribe">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fab fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fab fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="mt-4 mb-0">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

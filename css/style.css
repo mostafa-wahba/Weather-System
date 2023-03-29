@@ -1,0 +1,219 @@
+:root {
+    --main-color: #009ad8;
+    --moving: 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: white !important;
+}
+
+body {
+    background-color: #1e202b;
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<Navbar>>>>>>>>>>>>>>>>>>>> */
+.navbar {
+    background-color: #1e202b !important;
+    padding: 2.5rem 0 2.75rem;
+}
+
+.site-title {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.ST-description {
+    font-size: 0.65rem;
+    display: block;
+    color: #bfc1c8;
+}
+
+.logo {
+    margin-right: 0.7rem;
+    width: 4rem;
+    height: 2.375rem;
+}
+
+.nav-link {
+    padding: 0.3rem 1.5rem !important;
+    color: white !important;
+    transition: var(--moving) !important;
+    font-weight: 500;
+    line-height: 1;
+    font-size: 0.9rem;
+    border: 2px solid transparent !important;
+    border-radius: 30px;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
+.nav-item .active {
+    color: var(--main-color) !important;
+    border-radius: 30px;
+}
+
+.navbar-bars {
+    border: 2px solid transparent !important;
+    padding: 1rem;
+    border-radius: 30px;
+    color: white !important;
+    outline: none;
+}
+
+.navbar-bars:hover {
+    border: 2px solid var(--main-color) !important;
+    color: var(--main-color) !important;
+    transition: var(--moving) !important;
+}
+
+.navbar-toggler {
+    outline: none;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<Input section>>>>>>>>>>>>>>>>>>>> */
+.input-sec {
+    background-image: url(../img/banner.png);
+    background-size: cover;
+    padding: 4.375rem 0;
+    min-height: 350px;
+}
+
+.form,
+.subscribe-form {
+    position: relative;
+}
+
+.LF-input,
+.SF-input {
+    width: 100%;
+    padding: 1.25rem 3.125rem 1.25rem 1.25rem;
+    background-color: #1e202b;
+    border-radius: 30px;
+    outline: none !important;
+    border: none;
+    color: white;
+}
+
+.LS-input,
+.SS-input {
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 2.5rem;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<Content section>>>>>>>>>>>>>>>>>>>> */
+.content-table {
+    background: #323544;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+
+.cell-header {
+    background: rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+.cell-header p {
+    margin: 0.5rem 0 !important;
+}
+
+.cell-body {
+    padding-top: 1.875rem !important;
+    padding-bottom: 1.875rem !important;
+}
+
+.tomorrow-cell {
+    background-color: #262936;
+}
+
+.custom {
+    color: var(--main-color);
+    margin: 1.25rem 0;
+    font-size: 1rem;
+}
+
+.degree {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+}
+
+.today-cell .degree {
+    font-size: 5.625rem;
+}
+
+small {
+    font-size: 1rem !important;
+}
+
+#location {
+    font-size: 1.5rem;
+}
+
+.degree-icon img {
+    width: 4rem;
+}
+
+#deg-icon img {
+    width: 6rem;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<Footer>>>>>>>>>>>>>>>>>>>> */
+footer {
+    background: #262936;
+    padding: 3.125rem 0;
+}
+
+.social-links {
+    display: flex;
+    /* margin-right: auto; */
+    justify-content: right;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #1e202b;
+    color: var(--main-color) !important;
+    text-align: center;
+    transition: var(--moving);
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+
+}
+
+.social-links a:hover {
+    color: white !important;
+    background: var(--main-color);
+}
